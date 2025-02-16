@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="index.html" style="--i:1;">Home</a>
+            <a href="about.html" style="--i:2;">About</a>
+            <a href="portfolio.html" style="--i:3;">Skills</a>
+            <a href="contact.html" style="--i:4;" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+    
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form"> 
+                <!-- Hidden fields to configure the form -->
+                <input type="hidden" name="access_key" value="228d7de8-6490-47c8-a61f-5c778b8527f1">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> <!-- Update with your actual thank-you page -->
+                <input type="hidden" name="_captcha" value="false">
+    
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+    
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+    
+                <div class="input-box">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+    
+                <button type="submit" class="btncontact">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
