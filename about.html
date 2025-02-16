@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="Style.css">
+  <!-- <link rel="stylesheet" href="Script.js"> -->
+</head>
+
+<body>
+  <header class="header">
+
+    <a href="#" class="logo">Portfolio.</a>
+    <nav class="navbar">
+      <a href="index.html" style="--i:1;">Home</a>
+      <a href="about.html" style="--i:2;" class="active">About</a>
+      <a href="portfolio.html" style="--i:3;">Skills</a>
+      <a href="contact.html" style="--i:4;">Contact</a>
+    </nav>
+
+  </header>
+  
+  <div class="about-me">
+      <h1 class="h1_about">About Me</h1>
+      <div class="about-me-content">
+        <p class="p_about">Hi, I'm <strong>Zandile Sophy Mnizi</strong>, a dedicated Data Engineering Intern at Capaciti. I am passionate about leveraging data to drive meaningful insights and solutions. Currently, I'm expanding my expertise in data processing, cloud technologies, and ETL pipelines, while diligently working towards my CompTIA Data+ certification.
+          With a strong foundation in IT, data engineering, and cybersecurity, I bring a unique blend of technical skills and problem-solving abilities to every project. My journey in the tech world began with roles that have helped shape my expertise and professional approach.</p>
+    
+      </div>
+
+      <h2 class="h2_about">Experience</h2>
+      <div class="experience">
+          <h3>Data Engineering Intern – Capaciti (Present)</h3>
+          <ul>
+              <li>Focused on data processing, cloud platforms, and ETL pipelines.</li>
+              <li>Pursuing CompTIA Data+ certification to enhance my data analysis and management skills.</li>
+          </ul>
+          
+          <h3>Teacher’s Assistant – Bonwankwe Primary School (8 months)</h3>
+          <ul>
+              <li>Developed strong communication and problem-solving skills.</li>
+              <li>Fostered a collaborative learning environment.</li>
+          </ul>
+          
+          <h3>Salesperson – Torque-IT (6 months)</h3>
+          <ul>
+              <li>Gained experience in CRM systems, TAS systems, and prospecting.</li>
+              <li>Enhanced my customer relations and sales strategies.</li>
+          </ul>
+          
+          <h3>IT Technician (5 months)</h3>
+          <ul>
+              <li>Worked on hardware, software, and network troubleshooting.</li>
+              <li>Provided effective solutions for various IT issues.</li>
+          </ul>
+      </div>
+  </div>
+  <script>
+    function toggleText() {
+        var hiddenText = document.querySelector('.hidden-text');
+        var btn = document.querySelector('.read-more-btn');
+
+        if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+            hiddenText.style.display = "block";
+            btn.textContent = "Read less";
+        } else {
+            hiddenText.style.display = "none";
+            btn.textContent = "Read more";
+        }
+    }
+</script>
+</body>
+
+</html>
